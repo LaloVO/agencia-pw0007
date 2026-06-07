@@ -38,7 +38,7 @@ const Navbar = () => {
           to="/"
           className="font-sans font-extrabold text-xl md:text-2xl tracking-[0.2em] text-foreground transition-all duration-300 hover:opacity-80"
         >
-          {site?.site_name ? site.site_name.toUpperCase().replace(/\s+/g, '') : 'CLAUDIAVILLAR'}
+          {site?.site_name ? site.site_name.toUpperCase().replace(/\s+/g, '') : 'AGENCIA'}
         </Link>
 
         {/* Desktop Navigation */}
@@ -87,7 +87,7 @@ const Navbar = () => {
           <div>
             <div className="flex justify-between items-center mb-12">
               <span className="font-sans font-extrabold text-lg tracking-[0.2em] text-white">
-                {site?.site_name ? site.site_name.toUpperCase().replace(/\s+/g, '') : 'CLAUDIAVILLAR'}
+                {site?.site_name ? site.site_name.toUpperCase().replace(/\s+/g, '') : 'AGENCIA'}
               </span>
               <button
                 onClick={() => setIsMobileMenuOpen(false)}
@@ -115,7 +115,7 @@ const Navbar = () => {
           </div>
 
           <div className="text-white/40 text-[10px] uppercase tracking-widest font-light">
-            © {new Date().getFullYear()} {site?.site_name ?? 'Claudia Villar'}<br />
+            © {new Date().getFullYear()} {site?.site_name ?? 'Asesor Demo'}<br />
             Asesora Certificada en Bienes Raíces
           </div>
         </div>

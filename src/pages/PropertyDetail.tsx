@@ -10,7 +10,7 @@ import { useSiteUser } from '@/hooks/useSiteUser';
 const PropertyDetail = () => {
   const { id } = useParams<{ id: string }>();
   const { user, site } = useSiteUser();
-  const siteName = site?.site_name ?? 'Claudia Villar';
+  const siteName = site?.site_name ?? 'Asesor Demo';
 
   const { data: property, isLoading, error } = useQuery({
     queryKey: ['property', id],
@@ -20,7 +20,7 @@ const PropertyDetail = () => {
 
   const whatsappNumber = user?.telefono_usuario?.replace(/\D/g, '') ?? '';
   const whatsappMsg = property
-    ? encodeURIComponent(`Hola Claudia, me interesa la propiedad: ${property.nombre}`)
+    ? encodeURIComponent(`Hola Asesor Demo, me interesa la propiedad: ${property.nombre}`)
     : '';
   const whatsappUrl = `https://wa.me/${whatsappNumber}?text=${whatsappMsg}`;
 
@@ -195,7 +195,7 @@ const PropertyDetail = () => {
                     />
                   ) : (
                     <img
-                      src="/claudia_portrait.png"
+                      src="/agent-avatar.svg"
                       alt={user?.nombre_usuario || siteName}
                       className="w-14 h-14 rounded-full object-cover grayscale"
                     />

@@ -6,7 +6,7 @@ import { useSiteUser } from "@/hooks/useSiteUser";
 
 export default function SolicitaInmueble() {
   const { user, site } = useSiteUser();
-  const siteName = site?.site_name ?? 'Claudia Villar';
+  const siteName = site?.site_name ?? 'Asesor Demo';
 
   return (
     <>

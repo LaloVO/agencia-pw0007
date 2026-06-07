@@ -18,7 +18,7 @@ const AboutSection = () => {
     return () => obs.disconnect();
   }, []);
 
-  const phone = user?.telefono_usuario || '8441234567'; // fallback
+  const phone = user?.telefono_usuario || '5210000000000'; // fallback
   const whatsappUrl = `https://wa.me/${phone.replace(/\D/g, '')}?text=Hola%20Claudia,%20me%20gustar%C3%ADa%20recibir%20asesor%C3%ADa%20inmobiliaria`;
 
   return (
@@ -32,8 +32,8 @@ const AboutSection = () => {
           }`}>
             <div className="relative group overflow-hidden rounded-[2rem] aspect-square md:aspect-[4/5] bg-foreground/5 shadow-elegant">
               <img
-                src="/claudia_portrait.png"
-                alt="Claudia Villar"
+                src="/agent-avatar.svg"
+                alt="Asesor Demo"
                 className="w-full h-full object-cover grayscale transition-transform duration-[2000ms] group-hover:scale-105"
               />
               {/* Subtle glass overlay inside the portrait frame */}
@@ -52,7 +52,7 @@ const AboutSection = () => {
                 Tu Asesora de Confianza
               </span>
               <h2 className="text-3xl md:text-5xl font-extrabold text-foreground tracking-tight">
-                {user?.nombre_usuario || 'Claudia Villar'}
+                {user?.nombre_usuario || 'Asesor Demo'}
               </h2>
               <span className="text-xs uppercase tracking-[0.15em] text-foreground/50 font-semibold block mt-1">
                 Asesora Certificada en Bienes Raíces
@@ -90,7 +90,7 @@ const AboutSection = () => {
 
               {/* Instagram link */}
               <a
-                href="https://www.instagram.com/claudiaivillar/"
+                href="#"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center justify-center p-4 border border-foreground/[0.08] hover:border-foreground/20 rounded-full text-foreground/70 hover:text-foreground transition-all hover:bg-foreground/[0.02]"
@@ -101,7 +101,7 @@ const AboutSection = () => {
 
               {/* Facebook link */}
               <a
-                href="https://www.facebook.com/CLAUDIAV.BIENESRAICES"
+                href="#"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center justify-center p-4 border border-foreground/[0.08] hover:border-foreground/20 rounded-full text-foreground/70 hover:text-foreground transition-all hover:bg-foreground/[0.02]"

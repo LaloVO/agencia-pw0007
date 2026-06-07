@@ -3,7 +3,7 @@ import { useSiteUser } from '@/hooks/useSiteUser';
 
 const Footer = () => {
   const { site, user } = useSiteUser();
-  const phone = user?.telefono_usuario || '8441234567';
+  const phone = user?.telefono_usuario || '5210000000000';
   const whatsappUrl = `https://wa.me/${phone.replace(/\D/g, '')}`;
 
   return (
@@ -13,7 +13,7 @@ const Footer = () => {
           
           <div>
             <Link to="/" className="font-sans font-extrabold text-2xl tracking-[0.2em] mb-4 block text-foreground">
-              {site?.site_name ? site.site_name.toUpperCase().replace(/\s+/g, '') : 'CLAUDIAVILLAR'}
+              {site?.site_name ? site.site_name.toUpperCase().replace(/\s+/g, '') : 'AGENCIA'}
             </Link>
             <p className="text-xs uppercase tracking-widest text-foreground/40 font-bold max-w-sm leading-relaxed">
               Asesora Certificada en Bienes Raíces • Saltillo, Coahuila
@@ -22,7 +22,7 @@ const Footer = () => {
 
           <div className="flex flex-wrap gap-8 text-[10px] uppercase tracking-[0.2em] font-sans font-bold">
             <a
-              href="https://www.instagram.com/claudiaivillar/"
+              href="#"
               target="_blank"
               rel="noopener noreferrer"
               className="text-foreground/60 hover:text-foreground transition-colors"
@@ -30,7 +30,7 @@ const Footer = () => {
               Instagram
             </a>
             <a
-              href="https://www.facebook.com/CLAUDIAV.BIENESRAICES"
+              href="#"
               target="_blank"
               rel="noopener noreferrer"
               className="text-foreground/60 hover:text-foreground transition-colors"
@@ -51,7 +51,7 @@ const Footer = () => {
 
         {/* Small Legal Strip without Borders */}
         <div className="mt-20 pt-8 flex flex-col sm:flex-row justify-between text-[9px] uppercase tracking-widest text-foreground/30 font-bold gap-4">
-          <span>© {new Date().getFullYear()} {site?.site_name ?? 'Claudia Villar'} • Bienes Raíces</span>
+          <span>© {new Date().getFullYear()} {site?.site_name ?? 'Asesor Demo'} • Bienes Raíces</span>
           <span>Saltillo • Ramos Arizpe • Arteaga</span>
         </div>
 

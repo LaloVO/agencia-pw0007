@@ -9,7 +9,7 @@ import { useSiteUser } from '@/hooks/useSiteUser';
 
 const Index = () => {
   const { site } = useSiteUser();
-  const siteName = site?.site_name ?? 'Claudia Villar';
+  const siteName = site?.site_name ?? 'Asesor Demo';
 
   return (
     <>

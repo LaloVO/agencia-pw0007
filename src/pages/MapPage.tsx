@@ -217,7 +217,7 @@ const MapPage = () => {
     [filtered]
   );
 
-  const siteName = site?.site_name ?? 'Claudia Villar';
+  const siteName = site?.site_name ?? 'Asesor Demo';
 
   return (
     <>
